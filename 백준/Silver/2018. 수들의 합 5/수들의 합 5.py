@@ -9,9 +9,9 @@ end_index = 1
 sum = 1
 
 # 경우의 수에 맞게 투 포인터를 움직이며 찾기
-# 1) sum = n
-# 2) sum > n
-# 3) sum < n
+# 1) sum = n : 하나의 경우를 찾은 뒤, 구간을 확장
+# 2) sum > n : 구간을 줄여 합을 작게 만들자
+# 3) sum < n : 구간을 넓혀 합을 키우자
 
 while end_index != n:
     if sum == n:
